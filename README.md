@@ -2,15 +2,25 @@
 ------------------
 
 2D_dynamic/
+
 	fault2dPML.f: main code and subroutines 
+ 
 	PMLpack.f: additional subroutines for absorbing boundaries
+ 
 	arrays.f: array declaration for the fortran code
+ 
 	fpar_model1: input parameter file for fortran code
+
 	fpar_model2: alternate input parameter file
+ 
 	Makefile: Makefile to compile fortran code
+ 
 	RES_model1: output example of code
+ 
 	RES_model2: output example of code
+ 
 	README: instructions on use
+ 
 	read_plot_dimensionless.py: plotting script for results
 
 3D dynamic rupture
