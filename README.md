@@ -1,5 +1,5 @@
 ## Associated Publication
-The numerical codes oin this repository are associated to the publication "Earthquakes big and small: same physics, different boundary conditions" under review in *Nature Communications* (as of Nov. 21 2024)
+The numerical codes oin this repository are associated to the publication "Earthquakes big and small: same physics, different boundary conditions" under review in *Nature Communications* (as of Nov. 21, 2024)
 
 2D dynamic rupture
 ------------------
