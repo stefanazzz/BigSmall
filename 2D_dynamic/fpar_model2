@@ -1,0 +1,18 @@
+***sampling and iterations:
+3.125           dx      25.       12.5        6.25
+.00015625       dt      0.00125   0.000625   0.0003125
+15000           ntime
+1500000.        peak
+707000.         ssini (strini)1250000.
+sw              FricType (time,srw,sw) 
+0.01065  0.  0. .06  delta,vcha,vmax,tau_f
+2737  2737      rvr,rvh (vs=3220, 2737=0.85*vs)
+0.300           source/pulse duration (tau_s)
+195             InitAspLen
+0.0             mu_s
+0.0             mu_d
+512 128         nucleation/source location
+1000            skip save fields
+4000            skip save traces
+0.00            diss
+****************************

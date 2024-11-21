@@ -1,0 +1,11 @@
+Contains fortran simulation code and plotting python routine
+
+1) Copy fpar_model1 to fpar to run code with specific parmaters of model1, same for fpar_model2.
+2) Edit fpar to modify the parameters as desired.
+3) create a RES folder to store results. RES_model1 and RES_model2 folders contain pre-computed numerical results as shown in paper
+4) compile fortran code (see Makefile for compilation) and un the code
+5) python routine read_plot_dimensionless.py plots both numerical results and analytical solution
+Note:
+Deeper changes can be done by editing the source code in subroutines of fault2dPML.f
+Increase size of arrays in arrays.f
+PMLpack.f contains treatment for absorbing boundaries, in principle leave as is.

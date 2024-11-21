@@ -1,0 +1,50 @@
+c hELLO
+ccccccccccccccccccc
+c      medium size, number iterations; source position:
+       parameter (nx=200, ny=200, nz=200)
+       parameter (numsta= 10)
+       parameter (ifreqmode=0)
+c
+       real pi,peak,delta,vmax,mu_d,mu_s,dissipation
+       real rload,So,sn0,aa,hh,rr,rf,rn,rnn
+       real dx,dt,tw,ssini,vforce,RadiusInit
+       integer it,nos1,nos2,is1,is2,InitRadius
+       integer nxs,nys,nzs
+       integer nbr,nxf1,nxf2,nyf1,nyf2,nzf
+       integer lnuc,rcol,xc,yc,savefields,savetraces
+       logical spong,topography,input
+c field variables & parameters arrays:
+       real v1(1:nx,1:ny,1:nz)
+       real v2(1:nx,1:ny,1:nz)       
+       real v3(1:nx,1:ny,1:nz)       
+       real s11(1:nx,1:ny,1:nz)
+       real s22(1:nx,1:ny,1:nz)
+       real s33(1:nx,1:ny,1:nz)
+       real s12(1:nx,1:ny,1:nz)
+       real s23(1:nx,1:ny,1:nz)
+       real s31(1:nx,1:ny,1:nz)
+       real mu(1:nx,1:ny,1:nz)
+       real lam(1:nx,1:ny,1:nz)
+       real rho(1:nx,1:ny,1:nz)
+       real qf(1:nx,1:ny,1:nz)
+       real strini (1:nx,1:ny)
+       real peak_31 (1:nx,1:ny)
+       real rdis (1:nx,1:ny)
+       real slip (1:nx,1:ny)
+       real dirac (1:nz)
+       integer broken (1:nx,1:ny)
+       integer incrack (1:nx,1:ny)
+c COMMON VAR&PAR:
+       common /real/ peak,delta,vmax,mu_d,mu_s,dx,dt,tw,
+     &   pi,rload,So,sn0,aa,hh,rr,rf,rn,rnn,dissipation,
+     &   ssini,vforce,RadiusInit
+       common /ra1/ v1,v2,v3
+       common /ra2/ s11,s22,s33,s12,s23,s31,
+     &   strini,peak_31,slip,rdis,dirac
+       common /ra3/ mu,lam,qf,rho
+       common /intvec/ broken,incrack
+       common /integer/
+     &   it,nos1,nos2,is1,is2,nbr,nxf1,nxf2,nyf1,nyf2,nzf,
+     &   lnuc,rcol,xc,yc,savefields,savetraces,nxs,nys,nzs,
+     &   ntime,InitRadius
+       common /logical/ spong,topography,input

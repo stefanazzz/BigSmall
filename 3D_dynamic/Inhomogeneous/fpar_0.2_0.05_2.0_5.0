@@ -1,0 +1,17 @@
+***sampling and iterations:
+.2   dx
+.05   dt
+1300   ntime
+***fault parameters:*******
+0.266 tw
+0.00  vforce
+1.    peak
+0.6   ssini (strini) 0.6
+2.    delta
+0.0   vmax
+0.01  dissipation
+5.0  RadiusInit  6.4 (in distance, not nodes)
+0.0   mu_s
+0.0   mu_d
+****************************
+
